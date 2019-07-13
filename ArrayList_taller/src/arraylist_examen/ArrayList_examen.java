@@ -10,7 +10,7 @@ public class ArrayList_examen {
      double t=0;
      int mayorprom=0,poseslent=0,posesrapi=0; //posiciones de estudiante lento y rapido
      double estrapi,estlent; //estudiantes mas rapidos comparacion (lentos tambien)
-     double sprom=0,promedio;
+     double sprom=0,promedio=0;
      ArrayList <String> nomestud = new ArrayList ();
      ArrayList <Double> velocidad = new ArrayList();
      ArrayList <Double> tiempo = new ArrayList();
@@ -58,10 +58,11 @@ public class ArrayList_examen {
             System.out.println("");
         
         }
+        System.out.println("el promedio total es "+promedio);
         System.out.println("");
-        System.out.println("el estudiante mas rapido es "+nomestud.get(posesrapi)+" con velocidad "+velocidad.get(posesrapi));
+        System.out.println("el estudiante mas rapido es "+nomestud.get(posesrapi)+" con tiempo "+tiempo.get(posesrapi));
         System.out.println("");
-        System.out.println("el estudiante mas lento es "+nomestud.get(poseslent)+" con velocidad "+velocidad.get(poseslent));
+        System.out.println("el estudiante mas lento es "+nomestud.get(poseslent)+" con tiempo "+tiempo.get(poseslent));
         System.out.println("");
         System.out.println("la cantidad de estudiantes mayores al promdeio de tiempo es de "+mayorprom);
     }
