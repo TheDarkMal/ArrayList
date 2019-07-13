@@ -44,7 +44,7 @@ public class ArrayList_examen {
         
         estrapi=tiempo.get(0);
         estlent=tiempo.get(0);
-        System.out.println("la lista de estudiantes es de ");
+        System.out.println("la lista de estudiantes es: ");
         for(int y =0;y<nomestud.size();y++){
             if (estrapi>tiempo.get(y)){
             estrapi=tiempo.get(y); // estudiante mas rapido y su posicion
@@ -55,10 +55,15 @@ public class ArrayList_examen {
             poseslent=y;
             }
             System.out.println("nombre "+nomestud.get(y)+" velocidad "+velocidad.get(y)+" tiempo "+tiempo.get(y));
+            System.out.println("");
         
         }
+        System.out.println("");
         System.out.println("el estudiante mas rapido es "+nomestud.get(posesrapi)+" con velocidad "+velocidad.get(posesrapi));
+        System.out.println("");
         System.out.println("el estudiante mas lento es "+nomestud.get(poseslent)+" con velocidad "+velocidad.get(poseslent));
+        System.out.println("");
+        System.out.println("la cantidad de estudiantes mayores al promdeio de tiempo es de "+mayorprom);
     }
     
 }
