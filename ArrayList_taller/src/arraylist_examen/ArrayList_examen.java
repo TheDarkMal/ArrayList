@@ -8,7 +8,7 @@ public class ArrayList_examen {
     public static void main(String[] args) {
      Scanner leer = new Scanner (System.in); 
      double t=0;
-     double sprom=0;
+     double sprom=0,promedio;
      ArrayList <String> nomestud = new ArrayList ();
      ArrayList <Double> velocidad = new ArrayList();
      ArrayList <Double> tiempo = new ArrayList();
@@ -34,6 +34,8 @@ public class ArrayList_examen {
         t=(100/velocidad.get(x));
         tiempo.add(t);
         sprom=(sprom+tiempo.get(x));
+        promedio=sprom/tiempo.size();
+            System.out.println(promedio);
         }
     }
     
